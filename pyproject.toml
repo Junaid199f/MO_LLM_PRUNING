@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-structured-pruning"
+version = "0.1.0"
+description = "Hardware-aware two-stage structured pruning of language models"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "GPL-3.0-only"
+license-files = ["LICENSE", "NOTICE.md"]
+authors = [{name = "Muhammad Junaid Ali"}, {name = "Smail Niar"}, {name = "El Ghazali Talbi"}]
+
+[project.optional-dependencies]
+research = [
+  "torch==2.3.1", "transformers==4.47.1", "numpy==1.26.4",
+  "datasets==3.2.0", "sentencepiece==0.2.0", "protobuf",
+  "accelerate>=0.26,<2", "peft==0.14.0", "pymoo>=0.6,<0.7",
+  "botorch==0.12.0", "gpytorch==1.13", "lm_eval==0.4.7", "tqdm>=4.66",
+  "pandas>=2,<3", "matplotlib>=3.8,<4", "psutil>=5.9", "xgboost>=2,<3",
+]
+
+[project.scripts]
+llm-prune = "llm_pruning.cli:main"
+llm-prune-advanced = "llm_pruning.advanced:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+llm_pruning = ["data/calibration/*.json", "data/calibration200/*.json"]

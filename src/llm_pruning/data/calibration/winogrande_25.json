@@ -1,0 +1,77 @@
+[
+    {
+        "text":  "Sentence: Ian volunteered to eat Dennis\u0027s menudo after already having a bowl because _ despised eating intestine.\nOption 1: Ian\nOption 2: Dennis"
+    },
+    {
+        "text":  "Sentence: Ian volunteered to eat Dennis\u0027s menudo after already having a bowl because _ enjoyed eating intestine.\nOption 1: Ian\nOption 2: Dennis"
+    },
+    {
+        "text":  "Sentence: He never comes to my home, but I always go to his house because the _ is smaller.\nOption 1: home\nOption 2: house"
+    },
+    {
+        "text":  "Sentence: He never comes to my home, but I always go to his house because the _ is bigger.\nOption 1: home\nOption 2: house"
+    },
+    {
+        "text":  "Sentence: Kyle doesn\u0027t wear leg warmers to bed, while Logan almost always does. _ is more likely to live in a colder climate.\nOption 1: Kyle\nOption 2: Logan"
+    },
+    {
+        "text":  "Sentence: Kyle doesn\u0027t wear leg warmers to bed, while Logan almost always does. _ is more likely to live in a warmer climate.\nOption 1: Kyle\nOption 2: Logan"
+    },
+    {
+        "text":  "Sentence: The GPS and map helped me navigate home.  I got lost when the _ got turned upside down.\nOption 1: GPS\nOption 2: map"
+    },
+    {
+        "text":  "Sentence: The GPS and map helped me navigate home.  I got lost when the _ got turned off.\nOption 1: GPS\nOption 2: map"
+    },
+    {
+        "text":  "Sentence: Emily looked up and saw Patricia racing by overhead, as _ was on the ramp .\nOption 1: Emily\nOption 2: Patricia"
+    },
+    {
+        "text":  "Sentence: Emily looked up and saw Patricia racing by overhead, as _ was under the ramp .\nOption 1: Emily\nOption 2: Patricia"
+    },
+    {
+        "text":  "Sentence: The treasury workers took the gold bars off of the trolley and stacked them in the safe until the _ was empty.\nOption 1: safe\nOption 2: trolley"
+    },
+    {
+        "text":  "Sentence: The treasury workers took the gold bars off of the trolley and stacked them in the safe until the _ was full.\nOption 1: safe\nOption 2: trolley"
+    },
+    {
+        "text":  "Sentence: He thought he had time to take the scenic route to the store, but the _ was under construction.\nOption 1: route\nOption 2: store"
+    },
+    {
+        "text":  "Sentence: He thought he had time to take the scenic route to the store, but the _ was closed early.\nOption 1: route\nOption 2: store"
+    },
+    {
+        "text":  "Sentence: She remembered how annoying it is to dust her wood chair so she bought a plastic table instead.  Cleaning the _ is quick.\nOption 1: chair\nOption 2: table"
+    },
+    {
+        "text":  "Sentence: She remembered how annoying it is to dust her wood chair so she bought a plastic table instead.  Cleaning the _ is time consuming.\nOption 1: chair\nOption 2: table"
+    },
+    {
+        "text":  "Sentence: To overcome behavioural bias, we need to focus more on changing the conscious actions instead of the unconscious actions because the _ actions are voluntary.\nOption 1: unconscious\nOption 2: conscious"
+    },
+    {
+        "text":  "Sentence: To overcome behavioural bias, we need to focus more on changing the conscious actions instead of the unconscious actions because the _ actions are involuntary.\nOption 1: unconscious\nOption 2: conscious"
+    },
+    {
+        "text":  "Sentence: Megan has a lot less money than Jessica because _ just bought the winning lottery ticket.\nOption 1: Megan\nOption 2: Jessica"
+    },
+    {
+        "text":  "Sentence: Megan has a lot more money than Jessica because _ just bought the winning lottery ticket.\nOption 1: Megan\nOption 2: Jessica"
+    },
+    {
+        "text":  "Sentence: I picked up a bag of peanuts and raisins for a snack. I wanted a sweeter snack out so I stored the _ for now.\nOption 1: raisins\nOption 2: peanuts"
+    },
+    {
+        "text":  "Sentence: I picked up a bag of peanuts and raisins for a snack. I wanted a sweeter snack out so I ate the _ for now.\nOption 1: raisins\nOption 2: peanuts"
+    },
+    {
+        "text":  "Sentence: Craig really loves to clean all the time but Derrick does not because _ is very neat.\nOption 1: Craig\nOption 2: Derrick"
+    },
+    {
+        "text":  "Sentence: Craig really loves to clean all the time but Derrick does not because _ is very untidy.\nOption 1: Craig\nOption 2: Derrick"
+    },
+    {
+        "text":  "Sentence: Dennis gave his hammer to Robert so he could hammer the nails. _ had plenty of hammers.\nOption 1: Dennis\nOption 2: Robert"
+    }
+]

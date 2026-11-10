@@ -1,0 +1,2 @@
+# Install the package and its research dependencies.
+-e .[research]
