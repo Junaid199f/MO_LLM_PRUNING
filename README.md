@@ -125,4 +125,3 @@ The 20 tests cover budget conservation, layer retention limits, argument validat
 
 The original GPL v3 [LICENSE](LICENSE) and inherited source attribution are preserved. See [NOTICE.md](NOTICE.md) for the 2SSP foundation and adapted sources. Models and datasets retain their own terms.
 
-Use **this folder** as the GitHub repository root.
