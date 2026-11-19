@@ -14,10 +14,6 @@ source .venv/bin/activate
 python -m pip install -e ".[research]"
 ```
 
-On Windows, activate with `.venv\Scripts\Activate.ps1`. Use a CUDA-enabled PyTorch build appropriate for your GPU. Gated models require access through your Hugging Face account.
-
-To inspect commands and run the dependency-free checks without installing the research dependencies, use `python -m pip install -e .` instead. The dependency pins extend the original workspace's requirements; the complete ML environment and GPU execution have not been validated here.
-
 ## Run
 
 Start with the quick profile:
@@ -45,7 +41,7 @@ llm-prune --model meta-llama/Llama-2-7b-hf --profile paper --sparsity 0.5 --gpus
 | Total BO trials per candidate | 4 | 40 |
 | Random warm-up trials, included in total | 2 | 20 |
 
-The quick profile checks the pipeline; it is not a numerical reproduction. The paper profile is a large search and can require substantial CPU RAM for calibration logits and model copies. Search budgets alone do not establish exact reproduction; [implementation notes](docs/IMPLEMENTATION.md) record the known differences.
+
 
 Common options:
 
@@ -61,14 +57,8 @@ Common options:
 | `--output-dir outputs/my-run` | Set the run directory |
 | `--fresh` | Ignore an existing compatible checkpoint |
 
-Each run keeps checkpoints, CSV summaries, plots, and optional exports in its output directory. Repeating the same command resumes a compatible checkpoint. GPU indices are relative to `CUDA_VISIBLE_DEVICES`.
 
-The full research interface remains available for custom budgets, baselines, ablations, trial-level GPU parallelism, and LoRA recovery:
 
-```bash
-llm-prune-advanced --help
-python -m llm_pruning.advanced --help
-```
 
 See [advanced usage](docs/USAGE.md) for examples and checkpoint replay.
 
@@ -94,21 +84,8 @@ src/llm_pruning/
   data/                    Existing calibration prompt subsets
 ```
 
-The release excludes backups, logs, generated results, weights, external repository checkouts, scheduler-specific scripts, and the experimental third-stage KV search. The original working folder is separate and unchanged.
 
-## Data and model replay
 
-WikiText-2, C4, and FineWeb-Edu are loaded through Hugging Face Datasets. The bundled mixed-prompt calibration files retain the original workspace contents. Their source revisions, sampling history, and split separation are not fully recorded; see [data notes](docs/DATA.md). Downstream evaluation uses the installed `lm_eval` package.
-
-Per-layer structural pruning can produce shapes that a standard Hugging Face configuration cannot describe. Keep the base model ID, masks, stage-2 records, and tokenizer for replay. Do not assume a plain `save_pretrained` export loads correctly with an unmodified loader.
-
-## Validation
-
-```bash
-python -m unittest discover -s tests -v
-```
-
-The 20 tests cover budget conservation, layer retention limits, argument validation, output isolation, package imports, and bundled data. A wheel build and a temporary installation without research dependencies were also checked, including all 32 bundled calibration JSON files. GPU execution and the paper's numerical results remain untested in this environment.
 
 ## Citation and attribution
 
