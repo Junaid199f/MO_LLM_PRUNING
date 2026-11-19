@@ -100,5 +100,3 @@ src/llm_pruning/
 }
 ```
 
-The original GPL v3 [LICENSE](LICENSE) and inherited source attribution are preserved. See [NOTICE.md](NOTICE.md) for the 2SSP foundation and adapted sources. Models and datasets retain their own terms.
-
